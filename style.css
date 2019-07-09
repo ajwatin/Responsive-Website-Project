@@ -63,6 +63,8 @@ nav.navbar {
 	margin-bottom: 0 !important;
 }
 
+.contact:before,
+.sec2:before,
 .banner:before {
 	content: '';
 	position: absolute;
@@ -74,6 +76,8 @@ nav.navbar {
 	pointer-events: none;
 }
 
+.contact:after,
+.sec2:after,
 .banner:after {
 	content: '';
 	position: absolute;
@@ -111,4 +115,145 @@ nav.navbar {
 
 .contentBox p {
 	color: #fff;
+	font-size: 1.3rem;
+}
+
+.sec1 {
+	padding: 100px 0;
+	background: #000;
+}
+
+.headerText {
+	color: #fff;
+}
+
+.headerText h2 {
+	font-size: 2.5rem;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.placeBox {
+	position: relative;
+	max-width: 300px;
+	height: 400px;
+	margin: 0 auto;
+	background: #000;
+	margin-top: 30px;
+}
+
+.placeBox .imgBx {
+	width: 100%;
+	height: 100%;
+}
+
+.placeBox .imgBx img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.placeBox .content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: baseline;
+	align-items:flex-end;
+}
+
+.placeBox .content h3 {
+	position: relative;
+	margin: 0;
+	padding: 10px;
+	background: rgba(0,0,0,.95);
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	width: 100%;
+	text-align: center;
+}
+
+.placeBox .content h3 span {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.sec2 {
+	position:relative;
+	background: url('images/background.jpg');
+	height: 100vh;
+	background-size: cover;
+}
+
+.sec2 h2 {
+	font-weight: 800;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 4.5rem;
+}
+
+.contentBox .btnD1 {
+	border: 2px solid #fff;
+	color: #000;
+	background: #fff;
+	border-radius: 50px;
+	padding: 15px 50px;
+	font-size: 1.15rem;
+	outline: none;
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+.blog {
+	position: relative;
+	padding: 100px 0;
+	background: #000;
+}
+
+.blogpost {
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+	background: #fff;
+}
+
+.blogpost .imgBx {
+	//height: 400px;
+}
+
+.blogpost .imgBx img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	z-index: 0;
+}
+
+.blogpost .content {
+	padding: 15px;
+}
+
+.blogpost .content h1 {
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.content .btnD2 {
+	background: #262626;
+	color: #fff;
+	border-radius: 30px;
+	padding: 10px 20px;
+	float: right;
+}
+
+.contact {
+	position: relative;
+	padding: 100px 0;
+	background: url('images/background.jpg');
+	background-size: cover;
+	min-height: 100vh;
 }
