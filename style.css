@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,')
-*{
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap');
+
+* {
 	outline: none !important;
+	scroll-behavior: smooth;
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Berkshire Swash', cursive !important;
 	height: 100%;
 }
 
@@ -195,6 +197,7 @@ nav.navbar {
 	font-size: 4.5rem;
 }
 
+.contact .btnD1,
 .contentBox .btnD1 {
 	border: 2px solid #fff;
 	color: #000;
@@ -256,4 +259,75 @@ nav.navbar {
 	background: url('images/background.jpg');
 	background-size: cover;
 	min-height: 100vh;
+}
+
+.contact form {
+	z-index: 1000;
+	position: relative;
+}
+
+.contact .form-control {
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid rgba(255,255,255,.3);
+	height: 50px;
+	border-radius: 0;
+	background: rgba(0,0,0,.6);
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+.contact .form-control:focus,
+.contact .form-control:hover {
+	border: none;
+	border-bottom: 2px solid rgba(255,255,255,1);
+	box-shadow: none;
+}
+
+.contact .textarea {
+	min-height: 100px;
+}
+
+.contact label {
+	color: #fff;
+	font-size: 1.25rem;
+}
+
+footer {
+	background: #000;
+	padding: 50px 0 0
+}
+
+.sci {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sci li {
+	list-style: none;
+	margin: 0 20px;
+}
+
+.sci li a {
+	color: #777;
+	font-size: 2em;
+}
+
+.sci li a:hover {
+	color: #fff;
+	transition: 0.5s;
+}
+
+.cpryt {
+	color: #777;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.cpryt a:hover,
+.cpryt a {
+	color: #fff;
 }
